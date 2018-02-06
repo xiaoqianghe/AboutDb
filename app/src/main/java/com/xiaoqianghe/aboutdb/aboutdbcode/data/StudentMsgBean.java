@@ -19,11 +19,17 @@ public class StudentMsgBean {
     private String studentNum;
     @Property(nameInDb = "NAME")
     private String name;
-    @Generated(hash = 381350025)
-    public StudentMsgBean(Long id, String studentNum, String name) {
-        this.id = id;
+
+    private String age;
+
+//    @Generated(hash = 1573154658)
+
+    @Generated(hash = 1304458862)
+    public StudentMsgBean(long Id,String studentNum, String name, String age) {
+        this.id=Id;
         this.studentNum = studentNum;
         this.name = name;
+        this.age = age;
     }
 
 
@@ -54,5 +60,13 @@ public class StudentMsgBean {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
     }
 }
